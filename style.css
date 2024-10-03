@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(157, 73, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 90%;
+    max-width: 450px;
+    border: 0;
+    border-radius: 10px;
+    max-height: 100vh;
+}
+
+.container h1 {
+    font-weight: 600;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.quizApp {
+    padding: 10px 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.btn {
+    text-align: left;
+    font-size: 17px;
+    padding: 6px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    transition: all 0.3s;
+    display: block;
+    font-weight: 500;
+    width: 97%;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+    color: #000;
+}
+
+.next {
+    padding: 10px 10px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 10px;
+    border: 2px solid #000;
+    transition: all 0.3s;
+    display: none;
+}
+
+.next:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.correct {
+    background-color: rgb(32, 235, 32);
+}
+
+.incorrect {
+    background-color: rgb(240, 44, 44);
+}
+
